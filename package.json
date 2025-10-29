@@ -1,0 +1,36 @@
+{
+    "name": "homepage",
+    "version": "1.0.0",
+    "description": "The landing page for a responsive portfolio website.",
+    "keywords": [
+        "home",
+        "homepage",
+        "landing",
+        "landing page",
+        "responsive",
+        "portfolio",
+        "work",
+        "about",
+        "projects",
+        "contact",
+        "services",
+        "skills",
+        "experience",
+        "tools"
+    ],
+    "homepage": "https://github.com/lyndopanton/homepage#readme",
+        "bugs": {
+        "url": "https://github.com/lyndopanton/homepage/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lyndopanton/homepage.git"
+    },
+    "license": "ISC",
+    "author": "Lyndon Mykal Panton",
+    "type": "commonjs",
+    "main": "./src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
