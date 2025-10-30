@@ -10,8 +10,8 @@ class UI {
 
     createUI() {
         this.container.appendChild(new Header().component);
-        this.container.appendChild(new Main().component);
-        this.container.appendChild(new Footer().component);
+        // this.container.appendChild(new Main().component);
+        // this.container.appendChild(new Footer().component);
     }
 }
 

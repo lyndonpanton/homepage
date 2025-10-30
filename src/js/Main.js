@@ -6,7 +6,17 @@ class Main {
     createMain() {
         const parentContainer = document.createElement("main");
 
+        // parentContainer.appendChild(this.createAbout());
+
         return parentContainer;
+    }
+
+    createAbout() {
+        
+    }
+
+    createShowcase() {
+
     }
 
 }
