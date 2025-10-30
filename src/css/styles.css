@@ -11,6 +11,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 button, input, select {
@@ -26,11 +27,72 @@ html, body {
     font-weight: normal;
 }
 
-/* Header */
 h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+/* Header */
+.header {
+    padding: 30px 40px;
+}
+
+.header-portrait {
+    position: relative;
+
+    margin: 0 auto 60px;
+    min-height: 700px;
+
+    background-clip: border-box;
+    background-image: url("../asset/image/portfolio-portrait.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-portrait-heading {
+    position: absolute;
+    /* top: 620px; */
+    bottom: 15px;
+    margin: 0 auto;
+    width: 100%;
+
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: -2px 8px 4px #555555;
+}
+
+.header-about {
+
+}
+
+.header-about-heading {
     text-align: center;
 }
 
+.header-about-details {
+    color: #444444;
+    font-size: 1.4rem;
+    line-height: 1.7lh;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.header-icons-link {
+
+}
+
+.header-icons-icon {
+    width: 52px;
+}
 /* Main */
 
 

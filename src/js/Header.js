@@ -10,6 +10,7 @@ class Header {
 
     createHeader() {
         const container = document.createElement("header");
+        container.classList.add("header");
 
         container.appendChild(this.createPortrait());
         container.appendChild(this.createAbout());
@@ -20,63 +21,72 @@ class Header {
 
     createPortrait() {
         const container = document.createElement("article");
+        container.classList.add("header-portrait");
 
         const heading = document.createElement("h1");
+        heading.classList.add("header-portrait-heading");
         heading.textContent = "Ashley Williams";
+
+        container.appendChild(heading);
 
         return container;
     }
 
     createAbout() {
         const container = document.createElement("article");
+        container.classList.add("header-about");
 
         const heading = document.createElement("h2");
+        heading.classList.add("header-about-heading");
         heading.textContent = "About Me";
 
-        const about = document.createElement("p");
-        about.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing"
+        const details = document.createElement("p");
+        details.classList.add("header-about-details");
+        details.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing"
                 + " elit. In quis erat venenatis erat tempor viverra."
                 + " Pellentesque pharetra felis orci, et tristique arcu"
                 + " efficitur nec. Pellentesque sed vehicula tortor, vitae"
                 + " tempor nisl. Praesent mollis ipsum sed purus hendrerit, sit"
                 + " amet sagittis justo euismod. Nunc venenatis tristique elit,"
                 + " vel sagittis ipsum luctus a. Duis eu lectus efficitur,"
-                + " dignissim lacus blandit, eleifend lacus. Aenean vel arcu"
-                + " vitae mauris fringilla hendrerit eu quis lacus. Ut eu"
-                + " lobortis magna, ac malesuada urna. Mauris ultrices orci vel"
-                + " arcu convallis, et mattis lacus porttitor. Donec in mollis"
-                + " ex. Suspendisse iaculis nunc eu ex condimentum dapibus."
-                + " Vestibulum sed purus ante."
+                + " dignissim lacus blandit, eleifend lacus.";
 
         container.appendChild(heading);
-        container.appendChild(about);
+        container.appendChild(details);
 
         return container;
     }
 
     createIcons() {
         const container = document.createElement("article");
+        container.classList.add("header-icons");
 
         const github = document.createElement("a");
+        github.classList.add("header-icons-link");
         github.href = "https://github.com";
         github.target = "_blank";
         const githubImage = document.createElement("img");
+        githubImage.classList.add("header-icons-icon");
         githubImage.alt = "Github icon";
         githubImage.src = githubIcon;
         github.appendChild(githubImage);
 
         const linkedIn = document.createElement("a");
+        linkedIn.classList.add("header-icons-link");
         linkedIn.href = "https://linkedn.com";
         linkedIn.target = "_blank";
         const linkedInImage = document.createElement("img");
+        linkedInImage.classList.add("header-icons-icon");
         linkedInImage.alt = "LinkedIn icon";
         linkedInImage.src = linkedInIcon;
         linkedIn.appendChild(linkedInImage);
 
         const twitter = document.createElement("a");
+        twitter.classList.add("header-icons-link");
         twitter.href = "https://twitter.com";
         twitter.target = "_blank";
         const twitterImage = document.createElement("img");
+        twitterImage.classList.add("header-icons-icon");
         twitterImage.alt = "Twitter icon";
         twitterImage.src = twitterIcon;
         twitter.appendChild(twitterImage);

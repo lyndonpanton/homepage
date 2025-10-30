@@ -64,6 +64,8 @@ n/a
 - Icons
     - [Fontawesome](https://fontawesome.com/)
     - [Pictogrammers](https://pictogrammers.com/library/mdi/)
+- Template
+    - [Lipsum](https://www.lipsum.com/feed/html)
 
 ## References
 
