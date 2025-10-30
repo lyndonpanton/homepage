@@ -47,8 +47,23 @@ n/a
 
 ## Credits
 
-- [Lyndon Mykal Panton (developer)](https://github.com/lyndonpanton)
-- [Repository](https://github.com/lyndonpanton/homepage)
+- Project
+    - [Lyndon Mykal Panton (developer)](https://github.com/lyndonpanton)
+    - [Repository](https://github.com/lyndonpanton/homepage)
+- Images
+    - [Main image by Vlada Karpovich](https://www.pexels.com/photo/a-girl-in-pink-dress-holding-a-paint-brush-7031624/)
+    - [Project image #1 by Steve Johnson](https://www.pexels.com/photo/orange-red-and-green-abstract-painting-1585325/)
+    - [Project image #2 by Steve Johnson](https://www.pexels.com/photo/multicolored-abstract-painting-1509534/)
+    - [Project image #3 by Dan Cristian Pădureț](https://www.pexels.com/photo/photo-of-multicolored-abstract-painting-1193743/)
+    - [Project image #4 by Suzy Hazelwood](https://www.pexels.com/photo/blue-shade-painting-1762973/)
+    - [Project image #5 by eberhard grossgasteiger](https://www.pexels.com/photo/teal-and-pink-cherry-print-garment-2086361/)
+    - [Project image #6 by Steve Johnson](https://www.pexels.com/photo/multicolored-abstract-painting-1269968/)
+- Fonts
+    - [Primary font by Yvonne Schuttler](https://justfreefonts.com/fonts/calistoga/)
+    - [Secondary font by René Bieder](https://justfreefonts.com/fonts/suse-mono/)
+- Icons
+    - [Fontawesome](https://fontawesome.com/)
+    - [Pictogrammers](https://pictogrammers.com/library/mdi/)
 
 ## References
 
