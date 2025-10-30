@@ -32,5 +32,32 @@ h1 {
 }
 
 /* Main */
+.image {
+    display: block;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+    width: 200px;
+    height: 200px;
+}
+
+.image-1 {
+    border-color: red;
+}
+
+.image-2 {
+    border-color: green;
+
+    background-clip: border-box;
+    background-image: url("../asset/image/crow.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-3 {
+    border-color: blue;
+}
 
 /* Footer */
