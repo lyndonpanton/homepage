@@ -1,0 +1,36 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button, input, select {
+    appearance: none;
+}
+
+/* General */
+html, body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+}
+
+/* Main */
+
+/* Footer */
