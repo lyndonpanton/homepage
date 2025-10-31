@@ -40,7 +40,7 @@ h2 {
     padding: 30px 40px;
 }
 
-.header-portrait {
+.portrait {
     position: relative;
 
     margin: 0 auto 60px;
@@ -53,7 +53,7 @@ h2 {
     background-size: cover;
 }
 
-.header-portrait-heading {
+.portrait-heading {
     position: absolute;
     /* top: 620px; */
     bottom: 15px;
@@ -66,35 +66,50 @@ h2 {
     text-shadow: -2px 8px 4px #555555;
 }
 
-.header-about {
+.about {
 
 }
 
-.header-about-heading {
+.about-heading {
     text-align: center;
 }
 
-.header-about-details {
+.about-details {
     color: #444444;
     font-size: 1.4rem;
     line-height: 1.7lh;
 }
 
-.header-icons {
+.icons {
     display: flex;
     justify-content: center;
     gap: 16px;
 }
 
-.header-icons-link {
+.icons-link {
 
 }
 
-.header-icons-icon {
+.icons-icon {
     width: 52px;
 }
 /* Main */
+.showcase {
+    padding: 80px 25px 160px;
+}
 
+.project {
+
+}
+
+.project-image {
+    width: 100%;
+    height: 400px;
+}
+
+.project-preview-icon, .project-profile-icon {
+    width: 32px;
+}
 
 /* Footer */
 

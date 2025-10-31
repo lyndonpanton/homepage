@@ -21,10 +21,10 @@ class Header {
 
     createPortrait() {
         const container = document.createElement("article");
-        container.classList.add("header-portrait");
+        container.classList.add("portrait");
 
         const heading = document.createElement("h1");
-        heading.classList.add("header-portrait-heading");
+        heading.classList.add("portrait-heading");
         heading.textContent = "Ashley Williams";
 
         container.appendChild(heading);
@@ -34,14 +34,14 @@ class Header {
 
     createAbout() {
         const container = document.createElement("article");
-        container.classList.add("header-about");
+        container.classList.add("about");
 
         const heading = document.createElement("h2");
-        heading.classList.add("header-about-heading");
+        heading.classList.add("about-heading");
         heading.textContent = "About Me";
 
         const details = document.createElement("p");
-        details.classList.add("header-about-details");
+        details.classList.add("about-details");
         details.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing"
                 + " elit. In quis erat venenatis erat tempor viverra."
                 + " Pellentesque pharetra felis orci, et tristique arcu"
@@ -59,34 +59,34 @@ class Header {
 
     createIcons() {
         const container = document.createElement("article");
-        container.classList.add("header-icons");
+        container.classList.add("icons");
 
         const github = document.createElement("a");
-        github.classList.add("header-icons-link");
+        github.classList.add("icons-link");
         github.href = "https://github.com";
         github.target = "_blank";
         const githubImage = document.createElement("img");
-        githubImage.classList.add("header-icons-icon");
+        githubImage.classList.add("icons-icon");
         githubImage.alt = "Github icon";
         githubImage.src = githubIcon;
         github.appendChild(githubImage);
 
         const linkedIn = document.createElement("a");
-        linkedIn.classList.add("header-icons-link");
+        linkedIn.classList.add("icons-link");
         linkedIn.href = "https://linkedn.com";
         linkedIn.target = "_blank";
         const linkedInImage = document.createElement("img");
-        linkedInImage.classList.add("header-icons-icon");
+        linkedInImage.classList.add("icons-icon");
         linkedInImage.alt = "LinkedIn icon";
         linkedInImage.src = linkedInIcon;
         linkedIn.appendChild(linkedInImage);
 
         const twitter = document.createElement("a");
-        twitter.classList.add("header-icons-link");
+        twitter.classList.add("icons-link");
         twitter.href = "https://twitter.com";
         twitter.target = "_blank";
         const twitterImage = document.createElement("img");
-        twitterImage.classList.add("header-icons-icon");
+        twitterImage.classList.add("icons-icon");
         twitterImage.alt = "Twitter icon";
         twitterImage.src = twitterIcon;
         twitter.appendChild(twitterImage);
