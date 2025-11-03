@@ -25,6 +25,11 @@ class Main {
         const container = document.createElement("section");
         container.classList.add("showcase");
 
+        const heading = document.createElement("h2");
+        heading.classList.add("showcase-heading");
+        heading.textContent = "My Work";
+
+        container.appendChild(heading);
         container.appendChild(this.createProjects());
 
         return container;

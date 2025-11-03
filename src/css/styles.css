@@ -90,15 +90,26 @@ h2 {
 }
 
 .icons-icon {
-    width: 52px;
+    width: 40px;
 }
 /* Main */
 .showcase {
     padding: 80px 25px 160px;
 }
 
-.project {
+.showcase-heading {
+    margin: 0 0 20px;
 
+    font-weight: normal;
+}
+
+.project {
+    margin: 60px 0;
+
+    box-shadow:
+            0 2px 4px #CCCCCC,
+            0 2px 8px #AAAAAA,
+            0 2px 12px #999999;
 }
 
 .project-image {
@@ -107,15 +118,13 @@ h2 {
 }
 
 .project-details {
-
+    padding: 10px;
 }
 
 .project-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 0 4px;
 }
 
 .project-title {
