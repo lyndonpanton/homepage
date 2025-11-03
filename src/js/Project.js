@@ -24,13 +24,15 @@ class Project {
         const projectDetails = document.createElement("section");
         projectDetails.classList.add("project-details");
 
-        const projectHeading = document.createElement("h3");
+        const projectHeading = document.createElement("section");
         projectHeading.classList.add("project-heading");
-        projectHeading.textContent = this.title;
 
-        const projectDescription = document.createElement("p");
-        projectDescription.classList.add("project-description");
-        projectDescription.textContent = this.description;
+        const projectTitle = document.createElement("h3");
+        projectTitle.classList.add("project-title");
+        projectTitle.textContent = this.title;
+
+        const projectLinks = document.createElement("div");
+        projectLinks.classList.add("project-links");
 
         const projectProfile = document.createElement("a");
         projectProfile.classList.add("project-profile");
@@ -52,10 +54,18 @@ class Project {
         projectPreviewImage.src = previewIcon;
         projectPreview.appendChild(projectPreviewImage);
 
+        projectLinks.appendChild(projectProfile);
+        projectLinks.appendChild(projectPreview);
+
+        projectHeading.appendChild(projectTitle);
+        projectHeading.appendChild(projectLinks);
+
+        const projectDescription = document.createElement("p");
+        projectDescription.classList.add("project-description");
+        projectDescription.textContent = this.description;
+
         projectDetails.appendChild(projectHeading);
         projectDetails.appendChild(projectDescription);
-        projectDetails.appendChild(projectProfile);
-        projectDetails.appendChild(projectPreview);
 
         parentContainer.appendChild(projectImage);
         parentContainer.appendChild(projectDetails);
