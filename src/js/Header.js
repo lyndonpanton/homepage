@@ -1,4 +1,3 @@
-import headerImage from "../asset/image/portfolio-portrait.jpg"
 import githubIcon from "../asset/icon/icon-github.svg";
 import linkedInIcon from "../asset/icon/icon-linkedIn.svg";
 import twitterIcon from "../asset/icon/icon-twitter.svg";

@@ -47,7 +47,7 @@ h2 {
     min-height: 450px;
 
     background-clip: border-box;
-    background-image: url("../asset/image/portfolio-portrait.jpg");
+    background-image: url("../asset/image/portfolio-portrait-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -156,6 +156,16 @@ h2 {
 }
 
 /* Footer */
+
+.footer-image {
+    width: 100%;
+    min-height: 650px;
+    background-clip: border-box;
+    background-image: url("../asset/image/portfolio-portrait-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Media Queries */
 @media screen and (min-width: 600px) {

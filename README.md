@@ -58,6 +58,7 @@ n/a
     - [Project image #4 by Suzy Hazelwood](https://www.pexels.com/photo/blue-shade-painting-1762973/)
     - [Project image #5 by eberhard grossgasteiger](https://www.pexels.com/photo/teal-and-pink-cherry-print-garment-2086361/)
     - [Project image #6 by Steve Johnson](https://www.pexels.com/photo/multicolored-abstract-painting-1269968/)
+    - [Footer image by Vlada Karpovich](https://www.pexels.com/photo/girl-in-pink-dress-holding-colored-pencils-7026035/)
 - Fonts
     - [Primary font by Yvonne Schuttler](https://justfreefonts.com/fonts/calistoga/)
     - [Secondary font by René Bieder](https://justfreefonts.com/fonts/suse-mono/)
