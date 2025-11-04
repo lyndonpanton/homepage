@@ -58,7 +58,7 @@ class Footer {
         houseAddressLineOne.textContent = "1234 Random Road";
         const houseAddressLineTwo = document.createElement("p");
         houseAddressLineTwo.classList.add("contact-address-house-line");
-        houseAddressLineTwo.textContent = "Random Town, California 12345";
+        houseAddressLineTwo.textContent = "Random Town, California 67890";
 
         houseAddress.appendChild(houseAddressLineOne);
         houseAddress.appendChild(houseAddressLineTwo);

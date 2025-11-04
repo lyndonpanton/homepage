@@ -1,12 +1,12 @@
 /* Import */
 @font-face {
     font-family: CalistogaRegular;
-    src: url("../asset/font/calistoga/fonts/Calistoga-Regular.ttf")
+    src: url("../asset/font/calistoga/fonts/Calistoga-Regular.ttf");
 }
 
 @font-face {
-    font-family: SuseMono;
-    src: url("../asset/font/suse_mono/fonts/variable/SUSEMono[wght].ttf");
+    font-family: InterTypeface;
+    src: url("../asset/font/inter-typeface/variable/Inter.ttf");
 }
 
 /* Reset */
@@ -40,16 +40,16 @@ html, body {
 }
 
 h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
 }
 
 /* Header */
 .header {
-    padding: 30px 40px;
+    padding: 30px 25px;
 }
 
 .portrait {
@@ -87,9 +87,9 @@ h2 {
 
 .about-details {
     color: #444444;
-    font-family: SuseMono;
-    font-size: 1.4rem;
-    line-height: 1.7lh;
+    font-family: InterTypeface;
+    font-size: 1.2rem;
+    line-height: 1.4lh;
 }
 
 .icons {
@@ -141,7 +141,7 @@ h2 {
 }
 
 .project-title {
-    margin: 20px 5px 20px 0;
+    margin: 20px 5px 5px 0;
 
     font-size: 5vw;
     font-weight: normal;
@@ -165,7 +165,8 @@ h2 {
     /* padding: 0 10px; */
 
     color: #555555;
-    font-size: 1.2rem;
+    font-family: InterTypeface;
+    font-size: 1rem;
 }
 
 /* Footer */
@@ -185,15 +186,22 @@ footer {
 }
 
 .contact-message {
-    font-size: 1.2rem;
+    margin: 10px 0 0 0;
+
+    font-family: InterTypeface;
+    /* font-size: 1.2rem; */
+    font-size: 5vw;
 }
 
 .contact-address {
-
+    font-family: InterTypeface;
 }
 
 .contact-address-house {
     margin: 24px 0;
+
+    /* font-size: 0.8rem; */
+    font-size: 4vw;
 }
 
 .contact-address-house-line {
@@ -202,6 +210,10 @@ footer {
 
 .contact-address-phone, .contact-address-email {
     margin: 2px 0;
+
+    font-family: InterTypeface;
+    /* font-size: 0.8rem; */
+    font-size: 4vw;
 }
 
 .contact-social {

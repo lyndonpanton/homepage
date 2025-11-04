@@ -61,7 +61,7 @@ n/a
     - [Footer image by Vlada Karpovich](https://www.pexels.com/photo/girl-in-pink-dress-holding-colored-pencils-7026035/)
 - Fonts
     - [Primary font by Yvonne Schuttler](https://justfreefonts.com/fonts/calistoga/)
-    - [Secondary font by René Bieder](https://justfreefonts.com/fonts/suse-mono/)
+    - [Secondary font by Rasmus Andersson](https://justfreefonts.com/fonts/inter-typeface/)
 - Icons
     - [Fontawesome](https://fontawesome.com/)
     - [Pictogrammers](https://pictogrammers.com/library/mdi/)
