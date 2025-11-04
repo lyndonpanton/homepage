@@ -1,3 +1,14 @@
+/* Import */
+@font-face {
+    font-family: CalistogaRegular;
+    src: url("../asset/font/calistoga/fonts/Calistoga-Regular.ttf")
+}
+
+@font-face {
+    font-family: SuseMono;
+    src: url("../asset/font/suse_mono/fonts/variable/SUSEMono[wght].ttf");
+}
+
 /* Reset */
 * {
     box-sizing: border-box;
@@ -20,8 +31,9 @@ button, input, select {
 
 /* General */
 html, body {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
+    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif; */
+    font-family: CalistogaRegular;
     font-size: 16px;
     font-style: normal;
     font-weight: normal;
@@ -75,6 +87,7 @@ h2 {
 
 .about-details {
     color: #444444;
+    font-family: SuseMono;
     font-size: 1.4rem;
     line-height: 1.7lh;
 }
@@ -118,7 +131,7 @@ h2 {
 }
 
 .project-details {
-    padding: 10px;
+    padding: 20px;
 }
 
 .project-heading {
@@ -128,16 +141,16 @@ h2 {
 }
 
 .project-title {
-    margin: 20px 0;
+    margin: 20px 5px 20px 0;
 
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: normal;
     text-align: left;
 }
 
 .project-links {
     display: flex;
-    gap: 4vw;
+    gap: 2vw;
 }
 
 .project-profile, .project-preview {
@@ -149,13 +162,63 @@ h2 {
 }
 
 .project-description {
-    padding: 0 10px;
+    /* padding: 0 10px; */
 
     color: #555555;
     font-size: 1.2rem;
 }
 
 /* Footer */
+
+footer {
+    color: white;
+    background-color: #4499AA;
+}
+
+.contact {
+    padding: 30px 20px 60px;
+    font-style: normal;
+}
+
+.contact-heading {
+    font-weight: normal;
+}
+
+.contact-message {
+    font-size: 1.2rem;
+}
+
+.contact-address {
+
+}
+
+.contact-address-house {
+    margin: 24px 0;
+}
+
+.contact-address-house-line {
+    margin: 2px 0;
+}
+
+.contact-address-phone, .contact-address-email {
+    margin: 2px 0;
+}
+
+.contact-social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    margin: 20px 0;
+}
+
+.contact-social-link {
+    width: 48px;
+}
+
+.contact-social-image {
+
+}
 
 .footer-image {
     width: 100%;
