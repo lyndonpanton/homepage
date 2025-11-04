@@ -9,6 +9,11 @@
     src: url("../asset/font/inter-typeface/variable/Inter.ttf");
 }
 
+/* Variables */
+:root {
+    --background-colour: #4499AA;
+}
+
 /* Reset */
 * {
     box-sizing: border-box;
@@ -50,6 +55,13 @@ h2 {
 /* Header */
 .header {
     padding: 30px 25px;
+    background-image: linear-gradient(
+        150deg,
+        var(--background-colour) 0%,
+        var(--background-colour) 35%,
+        #CCCCCC 35%,
+        white 36%,
+        white 100%);
 }
 
 .portrait {
@@ -173,7 +185,7 @@ h2 {
 
 footer {
     color: white;
-    background-color: #4499AA;
+    background-color: var(--background-colour);
 }
 
 .contact {
