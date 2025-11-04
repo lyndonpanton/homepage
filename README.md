@@ -12,7 +12,7 @@ n/a
 
 ### Getting Started
 
-Visit the [application's website](https://lyndonpanton.github.io/homepag) in
+Visit the [application's website](https://lyndonpanton.github.io/homepage) in
 your desired browser to use the appliction
 
 ### Features

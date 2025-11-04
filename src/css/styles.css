@@ -36,8 +36,6 @@ button, input, select {
 
 /* General */
 html, body {
-    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif; */
     font-family: CalistogaRegular;
     font-size: 16px;
     font-style: normal;
@@ -61,7 +59,12 @@ h2 {
         var(--background-colour) 35%,
         #CCCCCC 35%,
         white 36%,
-        white 100%);
+        white 100%
+    );
+}
+
+.header-large {
+    display: none;
 }
 
 .portrait {
@@ -117,6 +120,7 @@ h2 {
 .icons-icon {
     width: 40px;
 }
+
 /* Main */
 .showcase {
     padding: 80px 25px 160px;
@@ -256,7 +260,67 @@ footer {
 
 /* Media Queries */
 @media screen and (min-width: 600px) {
+    .header {
+        clear: both;
+        padding: 40px 25px;
 
+        background-image: none; 
+        /* background-image: linear-gradient(
+            160deg,
+            var(--background-colour) 0%,
+            var(--background-colour) 40%,
+            #CCCCCC 40%,
+            white 41%,
+            white 100%
+        ); */
+    }
+
+    .header-small {
+        display: none;
+    }
+
+    .header-large {
+        display: block;
+    }
+
+    h1 {
+        position: absolute;
+        top: 50px;
+
+        width: 100%;
+
+        /* box-shadow */
+        color: white;
+        text-align: right;
+    }
+
+    .header-large-image {
+        float: left;
+
+        width: 50vw;
+        height: 300px;
+    }
+
+    .header-large-about {
+        float: right;
+
+        padding: 20px;
+
+        box-shadow:
+                0 2px 4px #CCCCCC;
+    }
+
+    .about-heading {
+        
+    }
+
+    .about-details {
+        
+    }
+
+    .icons {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1200px) {

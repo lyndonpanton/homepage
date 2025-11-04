@@ -1,3 +1,5 @@
+import portfolioPortrait from "../asset/image/portfolio-portrait-1.jpg";
+
 import githubIcon from "../asset/icon/icon-github.svg";
 import linkedInIcon from "../asset/icon/icon-linkedIn.svg";
 import twitterIcon from "../asset/icon/icon-twitter.svg";
@@ -11,9 +13,20 @@ class Header {
         const container = document.createElement("header");
         container.classList.add("header");
 
-        container.appendChild(this.createPortrait());
-        container.appendChild(this.createAbout());
-        container.appendChild(this.createIcons());
+        const headerSmall = document.createElement("section");
+        headerSmall.classList.add("header-small");
+
+        headerSmall.appendChild(this.createPortrait());
+        headerSmall.appendChild(this.createAbout());
+        headerSmall.appendChild(this.createIcons());
+
+        const headerLarge = document.createElement("section");
+        headerLarge.classList.add("header-large");
+
+        headerLarge.appendChild(this.createAboutLarge());
+
+        container.appendChild(headerSmall);
+        container.appendChild(headerLarge);
 
         return container;
     }
@@ -41,14 +54,14 @@ class Header {
 
         const details = document.createElement("p");
         details.classList.add("about-details");
-        details.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing"
-                + " elit. In quis erat venenatis erat tempor viverra."
-                + " Pellentesque pharetra felis orci, et tristique arcu"
-                + " efficitur nec. Pellentesque sed vehicula tortor, vitae"
-                + " tempor nisl. Praesent mollis ipsum sed purus hendrerit, sit"
-                + " amet sagittis justo euismod. Nunc venenatis tristique elit,"
-                + " vel sagittis ipsum luctus a. Duis eu lectus efficitur,"
-                + " dignissim lacus blandit, eleifend lacus.";
+        details.textContent = "Lorem ipsum dolor sit amet, consectetur"
+                + " adipiscing elit. In quis erat venenatis erat tempor"
+                + " viverra. Pellentesque pharetra felis orci, et tristique"
+                + " arcu efficitur nec. Pellentesque sed vehicula tortor,"
+                + " vitae tempor nisl. Praesent mollis ipsum sed purus"
+                + " hendrerit, sit amet sagittis justo euismod. Nunc venenatis"
+                + " tristique elit, vel sagittis ipsum luctus a. Duis eu lectus"
+                + " efficitur, dignissim lacus blandit, eleifend lacus.";
 
         container.appendChild(heading);
         container.appendChild(details);
@@ -93,6 +106,55 @@ class Header {
         container.appendChild(github);
         container.appendChild(linkedIn);
         container.appendChild(twitter);
+
+        return container;
+    }
+
+    createAboutLarge() {
+        /*
+            Container
+                Main Heading (position: absolute)
+                Content
+                    Image (float: left)
+                        About Heading ()
+                        About Text ()
+        */
+        const container = document.createElement("section");
+        container.classList.add("header-large-content");
+
+        const heading = document.createElement("h1");
+        heading.classList.add("header-large-heading");
+        heading.textContent = "Ashley Williams";
+
+        const image = document.createElement("img");
+        image.classList.add("header-large-image");
+        image.alt = "";
+        image.src = portfolioPortrait;
+
+        const about = document.createElement("section");
+        about.classList.add("header-large-about");
+
+        const aboutHeading = document.createElement("h2");
+        aboutHeading.classList.add("header-large-about-heading");
+        aboutHeading.textContent = "About Me";
+
+        const aboutMessage = document.createElement("p");
+        aboutMessage.classList.add("header-large-about-message");
+        aboutMessage.textContent = "Lorem ipsum dolor sit amet, consectetur"
+                + " adipiscing elit. In quis erat venenatis erat tempor"
+                + " viverra. Pellentesque pharetra felis orci, et tristique"
+                + " arcu efficitur nec. Pellentesque sed vehicula tortor,"
+                + " vitae tempor nisl. Praesent mollis ipsum sed purus"
+                + " hendrerit, sit amet sagittis justo euismod. Nunc venenatis"
+                + " tristique elit, vel sagittis ipsum luctus a. Duis eu lectus"
+                + " efficitur, dignissim lacus blandit, eleifend lacus.";
+
+        about.appendChild(aboutHeading);
+        about.appendChild(aboutMessage);
+
+        container.appendChild(heading);
+        container.appendChild(image);
+        container.appendChild(about);
 
         return container;
     }
