@@ -10,43 +10,42 @@ class Header {
     }
 
     createHeader() {
-        const container = document.createElement("header");
-        container.classList.add("header");
+        const component = document.createElement("header");
 
-        const headerSmall = document.createElement("section");
-        headerSmall.classList.add("header-small");
+        const containerSmall = document.createElement("section");
+        containerSmall.classList.add("header-small");
 
-        headerSmall.appendChild(this.createPortrait());
-        headerSmall.appendChild(this.createAbout());
-        headerSmall.appendChild(this.createIcons());
+        containerSmall.appendChild(this.createPortrait());
+        containerSmall.appendChild(this.createAbout());
+        containerSmall.appendChild(this.createIcons());
 
-        const headerLarge = document.createElement("section");
-        headerLarge.classList.add("header-large");
+        const containerLarge = document.createElement("section");
+        containerLarge.classList.add("header-large");
 
-        headerLarge.appendChild(this.createAboutLarge());
+        containerLarge.appendChild(this.createHeaderLarge());
 
-        container.appendChild(headerSmall);
-        container.appendChild(headerLarge);
+        component.appendChild(containerSmall);
+        component.appendChild(containerLarge);
 
-        return container;
+        return component;
     }
 
     createPortrait() {
-        const container = document.createElement("article");
-        container.classList.add("portrait");
+        const component = document.createElement("article");
+        component.classList.add("portrait");
 
         const heading = document.createElement("h1");
         heading.classList.add("portrait-heading");
         heading.textContent = "Ashley Williams";
 
-        container.appendChild(heading);
+        component.appendChild(heading);
 
-        return container;
+        return component;
     }
 
     createAbout() {
-        const container = document.createElement("article");
-        container.classList.add("about");
+        const component = document.createElement("article");
+        component.classList.add("about");
 
         const heading = document.createElement("h2");
         heading.classList.add("about-heading");
@@ -63,15 +62,15 @@ class Header {
                 + " tristique elit, vel sagittis ipsum luctus a. Duis eu lectus"
                 + " efficitur, dignissim lacus blandit, eleifend lacus.";
 
-        container.appendChild(heading);
-        container.appendChild(details);
+        component.appendChild(heading);
+        component.appendChild(details);
 
-        return container;
+        return component;
     }
 
     createIcons() {
-        const container = document.createElement("article");
-        container.classList.add("icons");
+        const component = document.createElement("article");
+        component.classList.add("icons");
 
         const github = document.createElement("a");
         github.classList.add("icons-link");
@@ -103,60 +102,68 @@ class Header {
         twitterImage.src = twitterIcon;
         twitter.appendChild(twitterImage);
 
-        container.appendChild(github);
-        container.appendChild(linkedIn);
-        container.appendChild(twitter);
+        component.appendChild(github);
+        component.appendChild(linkedIn);
+        component.appendChild(twitter);
 
-        return container;
+        return component;
     }
 
-    createAboutLarge() {
-        /*
-            Container
-                Main Heading (position: absolute)
-                Content
-                    Image (float: left)
-                        About Heading ()
-                        About Text ()
-        */
-        const container = document.createElement("section");
-        container.classList.add("header-large-content");
+    createHeaderLarge() {
+        const component = document.createElement("section");
+        component.classList.add("header-large");
 
         const heading = document.createElement("h1");
         heading.classList.add("header-large-heading");
         heading.textContent = "Ashley Williams";
 
+        component.appendChild(heading);
+        component.appendChild(this.createHeaderLargeContainer());
+
+        return component;
+    }
+
+    createHeaderLargeContainer() {
+        const component = document.createElement("div");
+        component.classList.add("header-large-container");
+
         const image = document.createElement("img");
-        image.classList.add("header-large-image");
-        image.alt = "";
+        image.classList.add("header-large-container-image");
+        image.alt = "Portrait of author";
         image.src = portfolioPortrait;
 
-        const about = document.createElement("section");
-        about.classList.add("header-large-about");
+        component.appendChild(image);
+        component.appendChild(this.createHeaderLargeContainerText());
 
-        const aboutHeading = document.createElement("h2");
-        aboutHeading.classList.add("header-large-about-heading");
-        aboutHeading.textContent = "About Me";
+        return component;
+    }
 
-        const aboutMessage = document.createElement("p");
-        aboutMessage.classList.add("header-large-about-message");
-        aboutMessage.textContent = "Lorem ipsum dolor sit amet, consectetur"
-                + " adipiscing elit. In quis erat venenatis erat tempor"
-                + " viverra. Pellentesque pharetra felis orci, et tristique"
-                + " arcu efficitur nec. Pellentesque sed vehicula tortor,"
-                + " vitae tempor nisl. Praesent mollis ipsum sed purus"
-                + " hendrerit, sit amet sagittis justo euismod. Nunc venenatis"
-                + " tristique elit, vel sagittis ipsum luctus a. Duis eu lectus"
-                + " efficitur, dignissim lacus blandit, eleifend lacus.";
+    createHeaderLargeContainerText() {
+        const component = document.createElement("div");
+        component.classList.add("header-large-container-text");
 
-        about.appendChild(aboutHeading);
-        about.appendChild(aboutMessage);
+        const heading = document.createElement("h2");
+        heading.classList.add("header-large-container-heading");
+        heading.textContent = "About Me";
 
-        container.appendChild(heading);
-        container.appendChild(image);
-        container.appendChild(about);
+        const message = document.createElement("p");
+        message.classList.add("header-large-container-message");
+        message.textContent =
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu"
+                + " lacus interdum, tincidunt mi eget, bibendum dui. Morbi"
+                + " aliquet posuere nulla, quis blandit felis pharetra vel."
+                + " Morbi faucibus posuere nisi. Maecenas sollicitudin est"
+                + " velit, a tempus nisi mattis nec. Ut pharetra mi at"
+                + " fringilla condimentum. Suspendisse non ultrices tellus."
+                + " Duis a dui vel leo bibendum mattis non sit amet ipsum."
+                + " Pellentesque pellentesque, nisi vel pellentesque tristique,"
+                + " neque nibh elementum nunc, vel posuere sapien nunc in"
+                + " ligula. Vestibulum in feugiat nisi.";
 
-        return container;
+        component.appendChild(heading);
+        component.appendChild(message);
+
+        return component;
     }
 }
 

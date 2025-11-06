@@ -51,7 +51,7 @@ h2 {
 }
 
 /* Header */
-.header {
+.header-small {
     padding: 30px 25px;
     background-image: linear-gradient(
         150deg,
@@ -260,20 +260,20 @@ footer {
 
 /* Media Queries */
 @media screen and (min-width: 600px) {
-    .header {
+    /* .header {
         clear: both;
         padding: 40px 25px;
 
         background-image: none; 
-        /* background-image: linear-gradient(
+        background-image: linear-gradient(
             160deg,
             var(--background-colour) 0%,
             var(--background-colour) 40%,
             #CCCCCC 40%,
             white 41%,
             white 100%
-        ); */
-    }
+        );
+    } */
 
     .header-small {
         display: none;
@@ -283,16 +283,23 @@ footer {
         display: block;
     }
 
-    h1 {
+    .header-large-heading {
+        position: relative;
+        top: 20px;
+        left: 90px;
+        /* color: white; */
+        font-size: 3rem;
+    }
+
+    /* h1 {
         position: absolute;
         top: 50px;
 
         width: 100%;
 
-        /* box-shadow */
         color: white;
         text-align: right;
-    }
+    } */
 
     .header-large-image {
         float: left;
@@ -301,25 +308,41 @@ footer {
         height: 300px;
     }
 
-    .header-large-about {
-        float: right;
+    .header-large-container {
+        position: relative;
+        z-index: -2;
 
-        padding: 20px;
+        margin: 0 auto;
+        width: 80%;
+        padding: 20px 40px;
 
         box-shadow:
-                0 2px 4px #CCCCCC;
+                0px 2px 5px #AAAAAA,
+                0px 4px 5px #CCCCCC,
+                0px 6px 5px #EEEEEE;
     }
 
-    .about-heading {
+    .header-large-container-image {
+        position: relative;
+        float: left;
+        z-index: -1;
+
+        margin: 0;
+        width: 250px;
+        height: 320px;
         
+        transform: translate(-50px, -50px) scale(1.2);
     }
 
-    .about-details {
-        
+    .header-large-container-heading {
+        font-size: 1.6rem;
     }
 
-    .icons {
-        display: none;
+    .header-large-container-message {
+        margin: 0;
+        padding: 0;
+
+        font-weight: normal !important;
     }
 }
 
