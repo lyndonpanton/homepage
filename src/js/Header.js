@@ -19,10 +19,8 @@ class Header {
         containerSmall.appendChild(this.createAbout());
         containerSmall.appendChild(this.createIcons());
 
-        const containerLarge = document.createElement("section");
+        const containerLarge = this.createHeaderLarge();
         containerLarge.classList.add("header-large");
-
-        containerLarge.appendChild(this.createHeaderLarge());
 
         component.appendChild(containerSmall);
         component.appendChild(containerLarge);
@@ -111,7 +109,7 @@ class Header {
 
     createHeaderLarge() {
         const component = document.createElement("section");
-        component.classList.add("header-large");
+        component.classList.add("header-large"); 
 
         const heading = document.createElement("h1");
         heading.classList.add("header-large-heading");

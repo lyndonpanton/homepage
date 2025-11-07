@@ -15,6 +15,7 @@ class Project {
     createProject() {
         const parentContainer = document.createElement("article");
         parentContainer.classList.add("project");
+        parentContainer.tabIndex = "1";
 
         const projectImage = document.createElement("img");
         projectImage.classList.add("project-image");
@@ -37,6 +38,7 @@ class Project {
         const projectProfile = document.createElement("a");
         projectProfile.classList.add("project-profile");
         projectProfile.href = this.profileLink;
+        projectProfile.tabIndex = "1";
         projectProfile.target = "_blank";
         const projectProfileImage = document.createElement("img");
         projectProfileImage.classList.add("project-profile-icon");
@@ -47,6 +49,7 @@ class Project {
         const projectPreview = document.createElement("a");
         projectPreview.classList.add("project-preview");
         projectPreview.href = this.previewLink;
+        projectPreview.tabIndex = "1";
         projectPreview.target = "_blank";
         const projectPreviewImage = document.createElement("img");
         projectPreviewImage.classList.add("project-preview-icon");
