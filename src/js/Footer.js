@@ -121,7 +121,7 @@ class Footer {
 
     createImage() {
         const container = document.createElement("div");
-        container.classList.add("footer-image")
+        container.classList.add("contact-image")
         // container.alt = "Girl holding colouring pencils";
         // container.src = footerImage;
 

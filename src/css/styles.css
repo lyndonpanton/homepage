@@ -248,10 +248,10 @@ footer {
 
 }
 
-.footer-image {
+.contact-image {
     width: 100%;
     min-height: 650px;
-    background-clip: border-box;
+    background-clip: no-clip;
     background-image: url("../asset/image/portfolio-portrait-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -393,6 +393,47 @@ footer {
 
     .project-description {
         font-size: 0.8rem;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 70px 50px 70px;
+    }
+
+    footer > * {
+        width: 50%;
+    }
+
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .contact-heading {
+        text-align: left;
+    }
+
+    .contact-address-house {
+        font-size: 1.3rem;
+    }
+
+    .contact-address-phone ,.contact-address-email {
+        font-size: 1.3rem;
+    }
+
+    .contact-message {
+        font-size: 1.3rem;
+    }
+
+    .contact-social {
+        justify-content: flex-start;
+    }
+
+    .contact-image {
+        width: 45%;
+        min-height: 0px;
     }
 }
 
