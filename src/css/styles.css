@@ -397,34 +397,39 @@ footer {
 
     /* Footer */
     footer {
-        display: flex;
-        justify-content: space-between;
+        /* display: flex;
+        justify-content: space-between; */
 
-        padding: 70px 50px 70px;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+
+        padding: 70px 20px 70px;
     }
 
-    footer > * {
+    /* footer > * {
         width: 50%;
-    }
+    } */
 
     .contact {
+
         padding: 60px 20px;
     }
 
     .contact-heading {
+        font-size: 2.2rem;
         text-align: left;
     }
 
+    .contact-message {
+        font-size: 1.1rem;
+    }
+
     .contact-address-house {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .contact-address-phone ,.contact-address-email {
-        font-size: 1.3rem;
-    }
-
-    .contact-message {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .contact-social {
@@ -432,7 +437,7 @@ footer {
     }
 
     .contact-image {
-        width: 45%;
+        
         min-height: 0px;
     }
 }
