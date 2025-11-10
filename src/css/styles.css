@@ -232,6 +232,11 @@ footer {
     font-size: 4vw;
 }
 
+.contact-address-phone-icon, .contact-address-email-icon {
+    display: none;
+    width: 32px;
+}
+
 .contact-social {
     display: flex;
     justify-content: center;
@@ -439,6 +444,7 @@ footer {
     }
 
     .contact-address-phone-icon, .contact-address-email-icon {
+        display: block;
         width: 32px;
     }
 
