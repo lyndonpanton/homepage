@@ -428,8 +428,18 @@ footer {
         font-size: 1.1rem;
     }
 
-    .contact-address-phone ,.contact-address-email {
+    .contact-address-phone, .contact-address-email {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .contact-address-phone-text,.contact-address-email-text {
         font-size: 1.1rem;
+    }
+
+    .contact-address-phone-icon, .contact-address-email-icon {
+        width: 32px;
     }
 
     .contact-social {
@@ -437,7 +447,6 @@ footer {
     }
 
     .contact-image {
-        
         min-height: 0px;
     }
 }

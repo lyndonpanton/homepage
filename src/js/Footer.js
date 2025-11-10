@@ -3,6 +3,8 @@ import footerImage from "../asset/image/portfolio-portrait-2.jpg";
 import githubIcon from "../asset/icon/icon-github.svg";
 import linkedInIcon from "../asset/icon/icon-linkedIn.svg";
 import twitterIcon from "../asset/icon/icon-twitter.svg";
+import phoneIcon from "../asset/icon/icon-phone.svg";
+import mailIcon from "../asset/icon/icon-mail.svg";
 
 class Footer {
     constructor() {
@@ -65,11 +67,29 @@ class Footer {
 
         const phoneNumber = document.createElement("p");
         phoneNumber.classList.add("contact-address-phone");
-        phoneNumber.textContent = "012-345-6789";
+        const phoneNumberIcon = document.createElement("img");
+        phoneNumberIcon.classList.add("contact-address-phone-icon");
+        phoneNumberIcon.alt = "";
+        phoneNumberIcon.src = phoneIcon;
+        phoneNumberIcon.tabIndex = "-1";
+        const phoneNumberText = document.createElement("span");
+        phoneNumberText.classList.add("contact-address-phone-text");
+        phoneNumberText.textContent = "012-345-6789";
+        phoneNumber.appendChild(phoneNumberIcon);
+        phoneNumber.appendChild(phoneNumberText);
 
         const emailAddress = document.createElement("p");
         emailAddress.classList.add("contact-address-email");
-        emailAddress.textContent = "ashleywilliams.is.not.real@gmail.com";
+        const emailAddressIcon = document.createElement("img");
+        emailAddressIcon.classList.add("contact-address-email-icon");
+        emailAddressIcon.alt = "";
+        emailAddressIcon.src = mailIcon;
+        emailAddressIcon.tabIndex = "-1";
+        const emailAddressText = document.createElement("a");
+        emailAddressText.classList.add("contact-address-email-text");
+        emailAddressText.textContent = "ashleywilliams.is.not.real@gmail.com";
+        emailAddress.appendChild(emailAddressIcon);
+        emailAddress.appendChild(emailAddressText);
 
         container.appendChild(houseAddress);
         container.appendChild(phoneNumber);
