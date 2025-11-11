@@ -17,7 +17,7 @@ class Header {
 
         containerGeneral.appendChild(this.createPortrait());
         containerGeneral.appendChild(this.createAbout());
-        containerGeneral.appendChild(this.createIcons());
+        // containerGeneral.appendChild(this.createIcons());
 
         const containerMedium = this.createHeaderMedium();
         containerMedium.classList.add("header-medium");
@@ -62,6 +62,7 @@ class Header {
 
         component.appendChild(heading);
         component.appendChild(details);
+        component.appendChild(this.createIcons());
 
         return component;
     }
