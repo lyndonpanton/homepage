@@ -458,6 +458,7 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
+    /* Header */
     .header-general {
         display: flex;
         flex-direction: row;
@@ -522,32 +523,28 @@ footer {
         justify-content: flex-end;
 
         width: 100%;
-        /* padding-right: 40px; */
+    }
+    
+    /* Main */
+    .project {
+        width: 25vw;
     }
 
-    .header-general-heading {
-
+    .project-image {
+        height: 200px;
     }
 
-    .header-general-container {
+    .project-title {
+        margin: 0;
 
+        font-size: 0.9rem;
     }
 
-    .header-general-container-image {
-
+    .project-preview-icon, .project-profile-icon {
+        width: 20px;
     }
 
-    .header-general-container-text {
-
-    }
-
-    .header-general-containter-heading {
-
-    }
-
-    .header-general-container-message {
-
-    }
+    /* Footer */
 }
 
 @media screen and (min-width: 1400px) {
