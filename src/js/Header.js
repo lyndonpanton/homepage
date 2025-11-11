@@ -12,18 +12,18 @@ class Header {
     createHeader() {
         const component = document.createElement("header");
 
-        const containerSmall = document.createElement("section");
-        containerSmall.classList.add("header-small");
+        const containerGeneral = document.createElement("section");
+        containerGeneral.classList.add("header-general");
 
-        containerSmall.appendChild(this.createPortrait());
-        containerSmall.appendChild(this.createAbout());
-        containerSmall.appendChild(this.createIcons());
+        containerGeneral.appendChild(this.createPortrait());
+        containerGeneral.appendChild(this.createAbout());
+        containerGeneral.appendChild(this.createIcons());
 
-        const containerLarge = this.createHeaderLarge();
-        containerLarge.classList.add("header-large");
+        const containerMedium = this.createHeaderMedium();
+        containerMedium.classList.add("header-medium");
 
-        component.appendChild(containerSmall);
-        component.appendChild(containerLarge);
+        component.appendChild(containerGeneral);
+        component.appendChild(containerMedium);
 
         return component;
     }
@@ -107,45 +107,45 @@ class Header {
         return component;
     }
 
-    createHeaderLarge() {
+    createHeaderMedium() {
         const component = document.createElement("section");
-        component.classList.add("header-large"); 
+        component.classList.add("header-medium"); 
 
         const heading = document.createElement("h1");
-        heading.classList.add("header-large-heading");
+        heading.classList.add("header-medium-heading");
         heading.textContent = "Ashley Williams";
 
         component.appendChild(heading);
-        component.appendChild(this.createHeaderLargeContainer());
+        component.appendChild(this.createHeaderMediumContainer());
 
         return component;
     }
 
-    createHeaderLargeContainer() {
+    createHeaderMediumContainer() {
         const component = document.createElement("div");
-        component.classList.add("header-large-container");
+        component.classList.add("header-medium-container");
 
         const image = document.createElement("img");
-        image.classList.add("header-large-container-image");
+        image.classList.add("header-medium-container-image");
         image.alt = "Portrait of author";
         image.src = portfolioPortrait;
 
         component.appendChild(image);
-        component.appendChild(this.createHeaderLargeContainerText());
+        component.appendChild(this.createHeaderMediumContainerText());
 
         return component;
     }
 
-    createHeaderLargeContainerText() {
+    createHeaderMediumContainerText() {
         const component = document.createElement("div");
-        component.classList.add("header-large-container-text");
+        component.classList.add("header-medium-container-text");
 
         const heading = document.createElement("h2");
-        heading.classList.add("header-large-container-heading");
+        heading.classList.add("header-medium-container-heading");
         heading.textContent = "About Me";
 
         const message = document.createElement("p");
-        message.classList.add("header-large-container-message");
+        message.classList.add("header-medium-container-message");
         message.textContent =
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu"
                 + " lacus interdum, tincidunt mi eget, bibendum dui. Morbi"
