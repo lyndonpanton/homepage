@@ -110,7 +110,7 @@ class Footer {
         const githubImage = document.createElement("img");
         githubImage.classList.add("contact-social-image");
         githubImage.src = githubIcon;
-        githubImage.alt = "Github link (opens in new tab)";
+        githubImage.alt = "Github (opens in new tab)";
         githubLink.appendChild(githubImage);
 
         const linkedInLink = document.createElement("a");
@@ -121,7 +121,7 @@ class Footer {
         const linkedInImage = document.createElement("img");
         linkedInImage.classList.add("contact-social-image");
         linkedInImage.src = linkedInIcon;
-        linkedInImage.alt = "LinkedIn link (opens in new tab)";
+        linkedInImage.alt = "LinkedIn (opens in new tab)";
         linkedInLink.appendChild(linkedInImage);
 
         const twitterLink = document.createElement("a");
@@ -132,7 +132,7 @@ class Footer {
         const twitterImage = document.createElement("img");
         twitterImage.classList.add("contact-social-image");
         twitterImage.src = twitterIcon;
-        twitterImage.alt = "Twitter link (opens in new tab)";
+        twitterImage.alt = "Twitter (opens in new tab)";
         twitterLink.appendChild(twitterImage);
 
         container.appendChild(githubLink);

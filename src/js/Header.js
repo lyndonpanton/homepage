@@ -78,7 +78,7 @@ class Header {
         github.target = "_blank";
         const githubImage = document.createElement("img");
         githubImage.classList.add("icons-icon");
-        githubImage.alt = "Github icon";
+        githubImage.alt = "Github (opens in new tab)";
         githubImage.src = githubIcon;
         github.appendChild(githubImage);
 
@@ -89,7 +89,7 @@ class Header {
         linkedIn.target = "_blank";
         const linkedInImage = document.createElement("img");
         linkedInImage.classList.add("icons-icon");
-        linkedInImage.alt = "LinkedIn icon";
+        linkedInImage.alt = "LinkedIn (opens in new tab)";
         linkedInImage.src = linkedInIcon;
         linkedIn.appendChild(linkedInImage);
 
@@ -100,7 +100,7 @@ class Header {
         twitter.target = "_blank";
         const twitterImage = document.createElement("img");
         twitterImage.classList.add("icons-icon");
-        twitterImage.alt = "Twitter icon";
+        twitterImage.alt = "Twitter (opens in new tab)";
         twitterImage.src = twitterIcon;
         twitter.appendChild(twitterImage);
 

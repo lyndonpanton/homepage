@@ -42,7 +42,7 @@ class Project {
         projectProfile.target = "_blank";
         const projectProfileImage = document.createElement("img");
         projectProfileImage.classList.add("project-profile-icon");
-        projectProfileImage.alt = "Open artist profile";
+        projectProfileImage.alt = "Artist profile (opens in new tab)";
         projectProfileImage.src = userIcon;
         projectProfile.appendChild(projectProfileImage);
         
@@ -53,7 +53,7 @@ class Project {
         projectPreview.target = "_blank";
         const projectPreviewImage = document.createElement("img");
         projectPreviewImage.classList.add("project-preview-icon");
-        projectPreviewImage.alt = "Open artwork page";
+        projectPreviewImage.alt = "Artwork page (opens in new tab)";
         projectPreviewImage.src = previewIcon;
         projectPreview.appendChild(projectPreviewImage);
 
