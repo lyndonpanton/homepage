@@ -11,7 +11,7 @@
 
 /* Variables */
 :root {
-    --background-colour: #4499AA;
+    --background-colour: #55AABB;
 }
 
 /* Reset */
@@ -188,7 +188,7 @@ h2 {
 /* Footer */
 
 footer {
-    color: white;
+    color: black;
     background-color: var(--background-colour);
 }
 
