@@ -74,6 +74,7 @@ class Header {
         const github = document.createElement("a");
         github.classList.add("icons-link");
         github.href = "https://github.com";
+        github.tabIndex = "1";
         github.target = "_blank";
         const githubImage = document.createElement("img");
         githubImage.classList.add("icons-icon");
@@ -84,6 +85,7 @@ class Header {
         const linkedIn = document.createElement("a");
         linkedIn.classList.add("icons-link");
         linkedIn.href = "https://linkedn.com";
+        linkedIn.tabIndex = "1";
         linkedIn.target = "_blank";
         const linkedInImage = document.createElement("img");
         linkedInImage.classList.add("icons-icon");
@@ -94,6 +96,7 @@ class Header {
         const twitter = document.createElement("a");
         twitter.classList.add("icons-link");
         twitter.href = "https://twitter.com";
+        twitter.tabIndex = "1";
         twitter.target = "_blank";
         const twitterImage = document.createElement("img");
         twitterImage.classList.add("icons-icon");

@@ -105,6 +105,7 @@ class Footer {
         const githubLink = document.createElement("a");
         githubLink.classList.add("contact-social-link");
         githubLink.href = "https://github.com";
+        githubLink.tabIndex = "1";
         githubLink.target = "_blank";
         const githubImage = document.createElement("img");
         githubImage.classList.add("contact-social-image");
@@ -115,6 +116,7 @@ class Footer {
         const linkedInLink = document.createElement("a");
         linkedInLink.classList.add("contact-social-link");
         linkedInLink.href = "https://linkedin.com";
+        linkedInLink.tabIndex = "1";
         githubLink.target = "_blank";
         const linkedInImage = document.createElement("img");
         linkedInImage.classList.add("contact-social-image");
@@ -125,6 +127,7 @@ class Footer {
         const twitterLink = document.createElement("a");
         twitterLink.classList.add("contact-social-link");
         twitterLink.href = "https://twitter.com";
+        twitterLink.tabIndex = "1";
         githubLink.target = "_blank";
         const twitterImage = document.createElement("img");
         twitterImage.classList.add("contact-social-image");
