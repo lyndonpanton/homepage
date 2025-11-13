@@ -18,6 +18,9 @@ your desired browser to use the appliction
 ### Features
 
 - Users can view the landing page
+- Landing page adaps to different screen sizes
+- Users can navigate the landing page using keyboard navigation
+- Users can navigate the landing page using a screen reader
 
 ### Technology
 
@@ -30,6 +33,8 @@ your desired browser to use the appliction
 #### Managers, Packages, And APIs
 
 - npm
+- JustFreeFonts
+- FontAwesome
 - Webpack
 
 #### Development Tools
@@ -64,7 +69,6 @@ n/a
     - [Secondary font by Rasmus Andersson](https://justfreefonts.com/fonts/inter-typeface/)
 - Icons
     - [Fontawesome](https://fontawesome.com/)
-    - [Pictogrammers](https://pictogrammers.com/library/mdi/)
 - Template
     - [Lipsum](https://www.lipsum.com/feed/html)
 
